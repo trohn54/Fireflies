@@ -37,6 +37,6 @@ public class EmissionControl : MonoBehaviour
 
         f += j;
         Debug.Log(f);
-        return new Color(f, f, 0);
+        return new Color(f, f, f*0.5f);  //light yellow
     }
 }
