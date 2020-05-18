@@ -28,14 +28,14 @@ public class EmissionControl : MonoBehaviour
         
         if (f > 1)
         {
-            j = -.0125f;
+            j = -1f;
         }
         if (f < -1)
         {
-            j = .0125f;
+            j = 1f;
         }
 
-        f += j;
+        f += j * Time.deltaTime;
         Debug.Log(f);
         return new Color(f, f, f*0.5f);  //light yellow
     }
